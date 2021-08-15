@@ -4,7 +4,7 @@ import Todo from './Todo';
 
 class TodosContainer extends Component {
 
-  renderTodos = () => this.props.todos.mapStateToProps((todo, id) => <Todo key={id} text={todo} />)
+  renderTodos = () => this.props.todos.map((todo, id) => <Todo key={id} text={todo} />)
 
   render() {
     console.log("Todos state: ", this.props.todos);
